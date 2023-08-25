@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 17px;
+  color: #eee;
+  list-style: circle;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.select,
+button {
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  background: #181818;
+}
+
+.main-box {
+  height: 90vh;
+  width: 90vw;
+  margin: auto;
+  padding: 1em;
+  border: 1px solid;
+  border-radius: 10px;
+
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+}
+
+.task-input {
+  height: 2.5em;
+  width: 100%;
+  padding: 1em;
+  border: none;
+  border-bottom: 1px solid;
+  background: none;
+  outline: none;
+}
+
+.task-box {
+  padding: 0 1em;
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.task {
+  padding: 0 5px;
+  border-radius: 10px;
+  transition: opacity ease-in-out 0.4s;
+}
+
+.task-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.task-controls {
+  border-radius: 10px;
+  display: flex;
+}
+
+.task-controls button {
+  padding: 0.5ch 1ch;
+  background: none;
+  border: none;
+  border-radius: 10px;
+}
+
+.task-controls *:hover {
+  background: #181818;
+}
+
+.task-remove-btn {
+  color: red;
+}
+
+.task:hover {
+  background: #2a2a2a;
+}
+
+.done {
+  /* text-decoration: line-through; */
+  opacity: 0.4;
+}
+.done p {
+  text-decoration: line-through;
+}
